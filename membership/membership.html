@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Page</title>
+    <link rel="stylesheet" href="styles-membership.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <h3>
+                T-Learning
+            </h3>
+        </div>
+        <div id="navigation">
+            <button id="home-btn">Home</button>
+            <button id="signin-btn">Sign In</button>
+            <button id="signup-btn">Sign Up</button>
+        </div>
+
+    </nav>
+
+    <div id="membership-content">
+        <section id="membership-info">
+            <h2>Join Our Membership!</h2>
+            <p>unlock materials only for members!</p>
+            <ul>
+                <li>Unlock courses</li>
+                <li>Download materials</li>
+                <li>Benefits of personal tutoring with experts</li>
+            </ul>
+        </section>
+
+        <section id="membership-form">
+            <h3>Sign Up for Membership</h3>
+            <form>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 T-Learning. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const homeBtn = document.getElementById('home-btn');
+
+            homeBtn.addEventListener('click', function () {
+                window.location.href = '/index.html';
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title id="page-title">Courses - T-Learning</title>
+    <link rel="stylesheet" href="/languages/languages-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <h3>T-Learning</h3>
+            </div>
+            <div id="navigation">
+                <button id="home-btn">Home</button>
+                <button id="signin-btn">Sign In</button>
+                <button id="signup-btn">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1 id="hero-title">Learn <span id="language-name">Korean</span> with Expert Tutors</h1>
+            <p>Master the <span id="language-name-2">Korean</span> Specifically designedto match your level.</p>
+        </section>
+
+        <section id="courses">
+            <div class="course">
+                <h2 id="beginner-course">Korean for Beginners</h2>
+                <p>The beginning of your language journey.</p>
+                <button>Join Now</button>
+            </div>
+            <div class="course">
+                <h2 id="intermediate-course">Korean Intermediate</h2>
+                <p>Designed for those that have started learning.</p>
+                <button>Join Now</button>
+            </div>
+            <div class="course">
+                <h2 id="advanced-course">Advanced Korean</h2>
+                <p>Designed for business usage.</p>
+                <button>Join Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 T-Learning. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+        const selectedLanguage = localStorage.getItem('selectedLanguage') || 'Korean';
+
+
+        document.getElementById('page-title').textContent = `${selectedLanguage} Courses - T-Learning`;
+
+
+        document.getElementById('hero-title').innerHTML = `Learn <span id="language-name">${selectedLanguage}</span> with Expert Tutors`;
+        document.querySelector('#hero p').innerHTML = `Master the <span id="language-name-2">${selectedLanguage}</span> language with our comprehensive courses designed for all levels.`;
+
+
+        document.getElementById('beginner-course').textContent = `${selectedLanguage} for Beginners`;
+        document.getElementById('intermediate-course').textContent = `${selectedLanguage} Intermediate`;
+        document.getElementById('advanced-course').textContent = `Advanced ${selectedLanguage}`;
+
+
+        document.getElementById('home-btn').addEventListener('click', function () {
+            window.location.href = '/index.html';
+        });
+    </script>
+
+</body>
+
+</html>

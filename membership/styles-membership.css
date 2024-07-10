@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(white, darkred);
+    color: white;
+    margin: 0;
+
+}
+
+/* NAVBAR */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+#logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkred;
+}
+
+#navigation {
+    display: flex;
+    gap: 1rem;
+}
+
+#navigation button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+#navigation button:hover {
+    background-color: blanchedalmond;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button#signup-btn {
+    background-color: darkred;
+    color: white;
+}
+
+#navigation button:hover {
+    background-color: darkred;
+}
+
+#membership-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 3rem;
+    gap: 3rem;
+    color: black;
+}
+
+#membership-info {
+    max-width: 400px;
+
+}
+
+#membership-info h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#membership-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#membership-info ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+#membership-info li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#membership-form {
+    max-width: 400px;
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+#membership-form h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+#membership-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#membership-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+#membership-form input {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #555;
+    border-radius: 0.3rem;
+    background-color: #444;
+    color: white;
+}
+
+#membership-form input:focus {
+    outline: none;
+    border-color: darkred;
+}
+
+#membership-form button {
+    padding: 1rem;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#membership-form button:hover {
+    background-color: rgba(139, 0, 0, 0.8);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}

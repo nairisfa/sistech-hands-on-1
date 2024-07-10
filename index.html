@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>T-Learning</title>
+  <link rel="stylesheet" href="styles-index.css" />
+  <style>
+    .plans-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .plan {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .plan button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="search-bar">
+      <input type="text" />
+      <button>Search!</button>
+    </div>
+    <div id="logo">
+      <h3>T-Learning</h3>
+    </div>
+    <div id="navigation">
+      <button id="home-btn">Home</button>
+      <button id="signin-btn">Sign In</button>
+      <button id="signup-btn">Sign Up</button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <h1>
+        Pick your course and embark on a rewarding journey with us, study
+        alongside experts to gain invaluable knowledge and skills
+      </h1>
+      <span>experienced proficient teachers in their respective languages worth
+        every penny paid!</span>
+      <button id="getStartedBtn">Get Started!</button>
+      <img src="/assets/flexy-young-man-studying-online.png" alt="" />
+    </section>
+
+    <section id="carousel">
+      <h2>Courses We Offer</h2>
+      <div class="carousel" id="carousel-container"></div>
+      <button class="carousel-control prev">&lt;</button>
+      <button class="carousel-control next">&gt;</button>
+    </section>
+
+    <section id="payment-plans">
+      <h2>Payment Plans</h2>
+      <div class="plans-container">
+        <div class="plan">
+          <h3>Bronze</h3>
+          <p>Rp 35,000/month</p>
+          <p>Basic fundamental courses</p>
+          <button>Join Membership</button>
+        </div>
+        <div class="plan">
+          <h3>Silver</h3>
+          <p>Rp 70,000/month</p>
+          <p>Unlock all courses available</p>
+          <button>Join Membership</button>
+        </div>
+        <div class="plan">
+          <h3>Gold</h3>
+          <p>Rp 100,000/month</p>
+          <p>
+            Unlock all courses available and personal chat with tutors benefit
+          </p>
+          <button>Join Membership</button>
+        </div>
+        <div class="plan">
+          <h3>Platinum</h3>
+          <p>Rp 250,000/month</p>
+          <p>
+            Unlock all courses available, personal chat with tutors, and 4x
+            offline meetings benefit
+          </p>
+          <button>Join Membership</button>
+        </div>
+        <div class="plan">
+          <h3>Diamond</h3>
+          <p>Rp 400,000/month</p>
+          <p>
+            Unlock all courses available, personal chat with tutors, and 8x
+            offline meetings benefit
+          </p>
+          <button>Join Membership</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tutors">
+      <h2>Meet Our Founders</h2>
+      <div class="tutors-carousel">
+        <div class="tutor-item">
+          <img src="/assets/tutors/tutor-kakgem.jpg" alt="Tutor Kak Gem" />
+          <h3>Kak Gem</h3>
+          <p>PAHAM?!</p>
+          <p class="education">PhD in Linguistics</p>
+        </div>
+        <div class="tutor-item">
+          <img src="/assets/tutors/tutor-chovy.jpg" alt="Tutor Chovy" />
+          <h3>Jihun Jeong</h3>
+          <p>Specialises in Korean with a focus on conversational fluency.</p>
+          <p class="education">MA in Korean Language Education</p>
+        </div>
+        <div class="tutor-item">
+          <img src="/assets/tutors/tutor-faker.jpg" alt="Tutor Faker" />
+          <h3>Sanghyeok Lee</h3>
+          <p>
+            English professor with 12 years of experience in teaching at
+            international programs.
+          </p>
+          <p class="education">PhD in English Literature</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 T-Learning. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
